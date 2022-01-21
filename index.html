@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<style>
 			.txt{
 				position: absolute;
@@ -58,6 +59,23 @@
 				order: 2;
 				width: 30%;
 			}
+			#bobo_inner{
+				display: flex; 
+				justify-content: center; 
+				align-items: center;
+			}
+			#bobo {
+				width: 50%; 
+				height: 60%;
+				margin-right: 5em;
+			}
+			@media screen and (max-width: 415px) {
+				#bobo {
+					width: 90%; 
+					height: 90%;
+					margin-right: 5em;
+				}
+			}
 
 			@media screen and (max-width: 980px) {
 
@@ -87,6 +105,9 @@
 				}
 
 			}
+			li {
+				color: aliceblue;
+			}
 		</style>
 	</head>
 	<body class="landing is-preload">
@@ -97,7 +118,7 @@
 					<section id="banner">
 						<div class="inner">
 							<h2>葉柏漢-Andrew Yeh</h2>
-							<p>要先有實力，才有資格談運氣。</p>
+							<p style="color: aliceblue;">要先有實力，才有資格談運氣。</p>
 							
 						</div>
 						<a href="#one" class="more scrolly">往下看</a>
@@ -105,11 +126,12 @@
 
 				<!-- One -->
 					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<div style="width: 9em;"></div>
-							<img src="images/S__45637640.jpg" style="width: 30%; height: 40%;">
-							<div style="width: 7em;"></div>
-							<div style="display: flex;">
+						<center>
+						<div class="inner row" id="bobo_inner">
+							<div class="col-12 col-lg-6">
+								<img src="images/S__45637640.jpg" id="bobo">
+							</div>
+							<div style="display: flex;" class="col-12 col-lg-6">
 								<div>
 									<h4>基本資料</h4>
 									<i class="fa fa-user" aria-hidden="true">&nbsp;<span>姓名：葉柏漢-Andrew YEH</span></i>
@@ -189,6 +211,7 @@
 								</div>
 							</div>
 						</div>
+					</center>
 					</section>
 					<center>
 					<section id="cta" class="wrapper style4">
@@ -241,31 +264,31 @@
 						<section class="spotlight">
 							<div class="image"><img src="images/python12.jpg" alt="" /></div><div class="content">
 								<h2>使用python搜刮網路資料的12堂實習課</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/messageImage_1630647832232.jpg" alt="" /></div><div class="content">
 								<h2>高科大-高科每日SEE</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/DIGI.JPG" alt="" /></div><div class="content">
 								<h2>錚典科技-DIGI+研習計畫</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/green.jpg" alt="" /></div><div class="content">
 								<h2>金屬中心-溫室專家知識設計輔助系統</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/新介面_210813.jpg" alt="" /></div><div class="content">
-								<h2>專題-istock股票投資決策支援系統</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>專題-股票投資決策支援系統</h2>
+								
 							</div>
 						</section>
 					</section>
